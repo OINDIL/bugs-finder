@@ -7,35 +7,41 @@
     <title>Buggy UI Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="bg-gry-100 text-center">
-    <nav class="bg-blu-500 p-4 -mb-10 relative z-10">
+<!-- subhankor -->
+<body class="bg-gray-200 text-center">
+    <nav class="bg-blue-500 p-4 mb-10 relative z-10">    
+        <!-- subhankor -->
         <ul class="flex justify-around text-white">
             <li><a href="#home" class="hover:underline">Home</a></li>
             <li><a href="#about" class="hover:underline">About</a></li>
-            <li><a href="#contact" class="hover:underlin">Contact</a></li>
-            <li><a href="javascript:void(0)">Blog</a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+            <!-- subhankor -->
+            <li><a href="#blog">Blog</a></li>
         </ul>
     </nav>
 
     <section class="p-10 flex flex-col md:flex-row items-center">
-        <img src="missing-image.jpg" alt="Hero" class="w-full md:w-1/2 rounded-xxl absolute left-0 top-0 opacity-80"
+        <!-- subhankor -->
+        <img src="https://via.placeholder.com/400" alt="Hero" class="w-full md:w-1/2 rounded-xl absolute left-0 top-0 opacity-80"
             id="hero-img" />
         <div class="md:ml-6 text-left mt-4 md:mt-0 relative z-0">
-            <h1 class="text-4xl font-bold text-blak" id="main-title">Welcome to Buggy Site</h1>
-            <h2 id="main-title" class="text-2xl">Subtitle with duplicate ID</h2>
+            <!-- subhankor -->
+            <h1 class="text-4xl font-bold text-black" id="main-title">Welcome to Buggy Site</h1>
+            <h2 id="main" class="text-2xl">Subtitle with duplicate ID</h2>
             <p class="mt-2 text-gray-700 leading-none">Fix the issues to improve this website.</p>
-            <button style="background: red; color: #e60000;" class="bg-green-500 text-white px-4 py-2 mt-4">Broken
+            <!-- subhankor -->
+            <button class="bg-green-500 text-white px-4 py-2 mt-4">Broken
                 Button</button>
-            <button class="bg-yellow-400 text-yellow-400 px-4 py-2 ml-2">Invisible Button</button>
+                <!-- subhankor -->
+            <button class="bg-yellow-400 text-black px-4 py-2 ml-2">Invisible Button</button>
         </div>
     </section>
 
     <section class="mt-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <div class="shadow p-4">
-                <h3 class="text-xl font-semi-bold">Speed</h3>
+                <!-- subhankor -->
+                <h3 class="text-xl font-semibold">Speed</h3>
                 <p class="text-sm">This website loads slowly.</p>
             </div>
             <div class="shadow p-4">
@@ -44,7 +50,8 @@
             </div>
             <div class="shadow p-4">
                 <h3 class="text-xl font-bold">User Friendly</h3>
-                <p class="text-sm">Users complain about navigation.<span></p>
+                <!-- subhankor -->
+                <p class="text-sm">Users complain about navigation.</p>
             </div>
         </div>
         <div class="p-2 m-10 md:p-10 md:m-2 bg-gray-100">Inconsistent spacing</div>
@@ -57,13 +64,17 @@
             <input type="text" placeholder="Your name" class="border p-2 w-full mb-4" id="input" />
             <input type="email" placeholder="Your email" class="border p-2 w-full mb-4" id="input" />
             <textarea placeholder="Message" class="border p-2 w-full mb-4">
-            <button type="submit" class="bg-green text-white py-2 px-4 outline-none focus:outline-none">
+            <button type="submit" class="bg-green-200 text-white py-2 px-4 outline-none focus:outline-none">
                 Send Message
             </button>
+             <!--subhankor  -->
+        </textarea>
         </form>
         <div class="flex justify-center mt-4 space-x-4">
-            <a href="htp://twitter.com"><img src="twitter.png"></a>
-            <a href=""><img src="facebook.png" alt=""></a>
+            <!-- subhankor -->
+            <a href="https://twitter.com"><img src="twitter.png" alt=""></a>
+            <a href="#"><img src="facebook.png" alt=""></a>
+            <!-- subhankor -->
         </div>
     </section>
 
@@ -80,7 +91,7 @@
         function doNothing() {
             console.log("This does nothing but exists.");
         }
-        document.getElementById('not-exist').innerText = 'Oops';
+        document.id=('not-exist').innerText = 'Oops';
     </script>
 </body>
 

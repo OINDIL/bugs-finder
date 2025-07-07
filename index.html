@@ -24,42 +24,42 @@
             id="hero-img" />
         <div class="md:ml-6 text-left mt-4 md:mt-0 relative z-0">
             <h1 class="text-4xl font-bold text-black" id="main-title">Welcome to Buggy Site</h1><!-- text colour spelling change add by debasree-->
-            <h2 id="main-title" class="text-2xl">Subtitle with duplicate ID</h2>
+            <h2 id="sub-title" class="text-2xl">Subtitle with duplicate ID</h2><!-- same id change by debasree-->
             <p class="mt-2 text-gray-700 leading-none">Fix the issues to improve this website.</p>
-            <button style="background: red; color: #e60000;" class="bg-green-500 text-white px-4 py-2 mt-4">Broken
-                Button</button>
-            <button class="bg-yellow-400 text-yellow-400 px-4 py-2 ml-2">Invisible Button</button>
+            <button style="background: red;" class="text-white px-4 py-2 mt-4">Broken
+                Button</button><!-- colour problem solved by debasree-->
+            <button class="bg-yellow-400 text-blue-500 px-4 py-2 ml-2">Invisible Button</button><!-- text colour change by debasree-->
         </div>
     </section>
 
     <section class="mt-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <div class="shadow p-4">
-                <h3 class="text-xl font-semi-bold">Speed</h3>
+                <h3 class="text-xl font-bold">Speed</h3><!-- font change bold by debasree-->
                 <p class="text-sm">This website loads slowly.</p>
             </div>
             <div class="shadow p-4">
                 <h3 class="text-xl font-bold">Responsive</h3>
-                <p class="text-sm text-gray-200">Only looks good on desktop.</p>
+                <p class="text-sm">Only looks good on desktop.</p><!-- text colour delete by debasree-->
             </div>
             <div class="shadow p-4">
                 <h3 class="text-xl font-bold">User Friendly</h3>
-                <p class="text-sm">Users complain about navigation.<span></p>
+                <p class="text-sm">Users complain about navigation.</p><!-- span tag delete by debasree-->
             </div>
         </div>
         <div class="p-2 m-10 md:p-10 md:m-2 bg-gray-100">Inconsistent spacing</div>
-        <div class="w-2/3 mx-0 md:mx-auto bg-gray-200">Not centered on mobile</div>
+        <div class="w-full md:w-2/3 mx-auto text-center items-center bg-gray-200">Not centered on mobile</div><!-- alignment issue solved by debasree-->
     </section>
 
     <section id="contact" class="bg-white p-6 max-w-md mx-auto mt-10">
         <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
         <form onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="Your name" class="border p-2 w-full mb-4" id="input" />
-            <input type="email" placeholder="Your email" class="border p-2 w-full mb-4" id="input" />
-            <textarea placeholder="Message" class="border p-2 w-full mb-4">
-            <button type="submit" class="bg-green text-white py-2 px-4 outline-none focus:outline-none">
+            <input type="text" placeholder="Your name" class="border p-2 w-full mb-4" id="full-name" /><!-- id change by debasree-->
+            <input type="email" placeholder="Your email" class="border p-2 w-full mb-4" id="email" /><!-- id change by debasree-->
+            <textarea placeholder="Message" class="border p-2 w-full mb-4"></textarea><!-- end textarea tag by debasree-->
+            <button type="submit" class="bg-green text-black py-2 px-4 outline-none focus:outline-none">
                 Send Message
-            </button>
+            </button><!-- text colour change by debasree-->
         </form>
         <div class="flex justify-center mt-4 space-x-4">
             <a href="htp://twitter.com"><img src="twitter.png"></a>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buggy UI Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gry-100 text-center">
+    <nav class="bg-blu-500 p-4 -mb-10 relative z-10">
+        <ul class="flex justify-around text-white">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#contact" class="hover:underlin">Contact</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+
+    <section class="p-10 flex flex-col md:flex-row items-center">
+        <img src="missing-image.jpg" alt="Hero" class="w-full md:w-1/2 rounded-xxl absolute left-0 top-0 opacity-80"
+            id="hero-img" />
+        <div class="md:ml-6 text-left mt-4 md:mt-0 relative z-0">
+            <h1 class="text-4xl font-bold text-blak" id="main-title">Welcome to Buggy Site</h1>
+            <h2 id="main-title" class="text-2xl">Subtitle with duplicate ID</h2>
+            <p class="mt-2 text-gray-700 leading-none">Fix the issues to improve this website.</p>
+            <button style="background: red; color: #e60000;" class="bg-green-500 text-white px-4 py-2 mt-4">Broken
+                Button</button>
+            <button class="bg-yellow-400 text-yellow-400 px-4 py-2 ml-2">Invisible Button</button>
+        </div>
+    </section>
+
+    <section class="mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+            <div class="shadow p-4">
+                <h3 class="text-xl font-semi-bold">Speed</h3>
+                <p class="text-sm">This website loads slowly.</p>
+            </div>
+            <div class="shadow p-4">
+                <h3 class="text-xl font-bold">Responsive</h3>
+                <p class="text-sm text-gray-200">Only looks good on desktop.</p>
+            </div>
+            <div class="shadow p-4">
+                <h3 class="text-xl font-bold">User Friendly</h3>
+                <p class="text-sm">Users complain about navigation.<span></p>
+            </div>
+        </div>
+        <div class="p-2 m-10 md:p-10 md:m-2 bg-gray-100">Inconsistent spacing</div>
+        <div class="w-2/3 mx-0 md:mx-auto bg-gray-200">Not centered on mobile</div>
+    </section>
+
+    <section id="contact" class="bg-white p-6 max-w-md mx-auto mt-10">
+        <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Your name" class="border p-2 w-full mb-4" id="input" />
+            <input type="email" placeholder="Your email" class="border p-2 w-full mb-4" id="input" />
+            <textarea placeholder="Message" class="border p-2 w-full mb-4">
+            <button type="submit" class="bg-green text-white py-2 px-4 outline-none focus:outline-none">
+                Send Message
+            </button>
+        </form>
+        <div class="flex justify-center mt-4 space-x-4">
+            <a href="htp://twitter.com"><img src="twitter.png"></a>
+            <a href=""><img src="facebook.png" alt=""></a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4">
+        <p class="text-sm">© 2025 Buggy Site. All rights reserved.</p>
+        <span class="text-gray-800">Invisible footer text</span>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            alert("Form submitted (not really)");
+        }
+
+        function doNothing() {
+            console.log("This does nothing but exists.");
+        }
+        document.getElementById('not-exist').innerText = 'Oops';
+    </script>
+</body>
+
+</html>
